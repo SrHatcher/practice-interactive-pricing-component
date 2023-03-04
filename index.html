@@ -4,36 +4,67 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!--Modern CSS reset-->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <!--My styles-->
+  <link rel="stylesheet" href="./styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive pricing component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <main>
+    <div class="main__header">
+      <h1 class="header__title">Simple, traffic-based pricing</h1>
+      <p class="header__Text">Sign-up for our 30-day trial. No credit card required.</p>
+      <div class="header__background"></div>
+    </div>
 
-  Pageviews
-  $ /month
+    <div class="main__card">
+      <div class="card__upper_level">
+        <div class="upper_level__range_section_container">
+          <span class="upper_level__pageviews_amount">100K PAGEVIEWS</span>
+          <input type="range" class="upper_level__range_input" min="0" max="4" value="2" oninput="slider()">
+          <div class="upper_level__bill_container">
+            <span class="upper_level__bill_amount">$16.00 </span>
+            <span class="upper_level__bill_time">/ month</span>
+          </div>
+        </div>
+        <div class="upper_level__options_container">
+          <span class="options__text">Monthly Billing</span>
+          <label class="options__switch_container">
+            <input type="checkbox" class="options__switch_input">
+            <span class="options__switch_span round"></span>
+          </label>
+          <div class="upper_level__yearly_container">
+            <span class="options__text">Yearly Billing</span>
+            <span class="options__discount_span_mobile">-25%</span>
+            <span class="options__discount_span_desktop">25% discount</span>
+          </div>
+        </div>
+      </div>
+      <hr class="card__separator">
+      <div class="card__lower_level">
+        <div class="lower_level__pros">
+          <div>
+            <span class="pros__icon"></span>
+            <span class="pros__text">Unlimited websites</span>
+          </div>
+          <div>
+            <span class="pros__icon"></span>
+            <span class="pros__text">100% data ownership</span>
+          </div>
+          <div>
+            <span class="pros__icon"></span>
+            <span class="pros__text">Email reports</span>
+          </div>
+        </div>
+        <button class="lower_level__button">Start my trial</button>
+      </div>
+    </div>
+  </main>
 
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="./index.js"></script>
 </body>
 </html>
