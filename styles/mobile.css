@@ -170,6 +170,8 @@ input[type="range"]::-moz-range-thumb{
     background-color: var(--strong-cyan-slider-background);
     background-image: url('../images/icon-slider.svg');
     box-shadow: 0 0 1.5rem 0.5rem var(--soft-cyan-full-slider-bar);
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 50%;
     cursor: pointer;
     border: none;
@@ -183,6 +185,8 @@ input[type="range"]::-ms-thumb{
     background-color: var(--strong-cyan-slider-background);
     background-image: url('../images/icon-slider.svg');
     box-shadow: 0 0 1.5rem 0.5rem var(--soft-cyan-full-slider-bar);
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 50%;
     cursor: pointer;
     border: none;
