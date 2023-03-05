@@ -94,7 +94,7 @@ main{
 }
 .main__card{
 
-    width: 32.7rem;
+    width: auto;
     height: auto;
 
     background-color: white;
@@ -368,6 +368,13 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .lower_level__button:active{
     transform: scale(0.95);
+}
+
+@media screen and (max-width: 375px) {
+    main{
+        width: 100%;
+        max-width: unset;
+    }
 }
 
 @media (hover:hover){
